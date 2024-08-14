@@ -1,0 +1,114 @@
+.box {
+    border: 2px solid #000;
+    /* Bordo del box */
+    padding: 20px;
+    /* Spazio interno */
+    margin: 20px;
+    /* Spazio esterno */
+    background-color: #b2bbb3;
+    /* Colore di sfondo */
+    width: 1000px;
+    /* Larghezza del box */
+    border-radius: 100px;
+    /* Angoli arrotondati */
+    text-align: center;
+    vertical-align: auto;
+
+}
+
+.header {
+    font-size: 3.5;
+    /* Dimensione del testo */
+    color: #faf8f8;
+    /* Colore del testo */
+    margin-bottom: 10px;
+    /* Spazio sotto l'intestazione */
+    font: bolder;
+    font-style: oblique;
+}
+
+.box1 {
+    background-color: #4CAF50;
+    border-radius: 100px;
+    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-box {
+    border-radius: 100px;
+    height: 150px;
+    flex: 1;
+    /* Ogni box interno occupa una parte uguale dello spazio disponibile */
+    margin: 20px;
+    /* Spazio tra i box interni */
+    border: 2px solid #000;
+    /* Bordo dei box interni */
+    background-color: #b3ad9a;
+    /* Colore di sfondo dei box interni */
+    display: flex;
+    justify-content: center;
+    /* Centratura orizzontale del testo */
+    align-items: center;
+    /* Centratura verticale del testo */
+    font-size: 1.2em;
+    /* Dimensione del testo */
+    color: #fff;
+    /* Colore del testo */
+}
+
+.image-gallery {
+    display: flex;
+    /* Utilizza Flexbox per disporre le immagini */
+    justify-content: center;
+    /* Centra orizzontalmente le immagini */
+    flex-wrap: wrap;
+    /* Permette alle immagini di andare a capo se necessario */
+    gap: 10px;
+    /* Spazio tra le immagini */
+    margin: 20px;
+    /* Spazio esterno alla galleria */
+}
+
+.gallery-img {
+    width: 200px;
+    /* Larghezza delle immagini */
+    height: auto;
+    /* Mantiene le proporzioni delle immagini */
+    border: 2px solid #000;
+    /* Bordo delle immagini */
+    border-radius: 10px;
+    /* Angoli arrotondati delle immagini */
+}
+
+/* Stili di base per il footer */
+footer {
+    background-color: #333;
+    /* Colore di sfondo scuro */
+    color: #fff;
+    /* Colore del testo chiaro */
+    text-align: center;
+    /* Testo centrato */
+    padding: 20px;
+    /* Spaziatura interna */
+    position: relative;
+    /* Posizione relativa per il posizionamento del footer */
+    bottom: 0;
+    /* Allinea il footer al fondo della pagina */
+    width: 100%;
+    /* Larghezza del footer */
+    box-sizing: border-box;
+    /* Include padding e bordo nella larghezza totale */
+}
+
+/* Link all'interno del footer */
+footer a {
+    color: #fff;
+    /* Colore dei link chiaro */
+    text-decoration: none;
+    /* Rimuove la sottolineatura dei link */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Aggiunge sottolineatura ai link al passaggio del mouse */
+}
