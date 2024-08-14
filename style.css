@@ -65,23 +65,24 @@
     /* Permette alle immagini di andare a capo se necessario */
     gap: 10px;
     /* Spazio tra le immagini */
-    margin: 20px;
+    margin: 1px;
     /* Spazio esterno alla galleria */
 }
 
 .gallery-img {
-    width: 200px;
+    width: 1px;
     /* Larghezza delle immagini */
-    height: auto;
+    height: 1px;
     /* Mantiene le proporzioni delle immagini */
-    border: 2px solid #000;
+    border: 1px solid #000;
     /* Bordo delle immagini */
-    border-radius: 10px;
+    border-radius: 100px;
     /* Angoli arrotondati delle immagini */
 }
 
 /* Stili di base per il footer */
 footer {
+    width: 1000px;
     background-color: #333;
     /* Colore di sfondo scuro */
     color: #fff;
