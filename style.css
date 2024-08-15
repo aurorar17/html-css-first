@@ -1,115 +1,135 @@
-.box {
-    border: 2px solid #000;
-    /* Bordo del box */
-    padding: 20px;
-    /* Spazio interno */
-    margin: 20px;
-    /* Spazio esterno */
-    background-color: #b2bbb3;
-    /* Colore di sfondo */
-    width: 1000px;
-    /* Larghezza del box */
-    border-radius: 100px;
-    /* Angoli arrotondati */
-    text-align: center;
-    vertical-align: auto;
-
-}
-
-.header {
-    font-size: 3.5;
-    /* Dimensione del testo */
-    color: #faf8f8;
-    /* Colore del testo */
-    margin-bottom: 10px;
-    /* Spazio sotto l'intestazione */
-    font: bolder;
-    font-style: oblique;
-}
-
-.box1 {
-    background-color: #4CAF50;
-    border-radius: 100px;
-    height: 1000px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.sub-box {
-    border-radius: 100px;
-    height: 150px;
-    flex: 1;
-    /* Ogni box interno occupa una parte uguale dello spazio disponibile */
-    margin: 20px;
-    /* Spazio tra i box interni */
-    border: 2px solid #000;
-    /* Bordo dei box interni */
-    background-color: #b3ad9a;
-    /* Colore di sfondo dei box interni */
-    display: flex;
-    justify-content: center;
-    /* Centratura orizzontale del testo */
-    align-items: center;
-    /* Centratura verticale del testo */
-    font-size: 1.2em;
-    /* Dimensione del testo */
-    color: #fff;
-    /* Colore del testo */
-}
-
-.image-gallery {
-    display: flex;
-    /* Utilizza Flexbox per disporre le immagini */
-    justify-content: center;
-    /* Centra orizzontalmente le immagini */
-    flex-wrap: wrap;
-    /* Permette alle immagini di andare a capo se necessario */
-    gap: 10px;
-    /* Spazio tra le immagini */
-    margin: 1px;
-    /* Spazio esterno alla galleria */
-}
-
-.gallery-img {
-    width: 1px;
-    /* Larghezza delle immagini */
-    height: 1px;
-    /* Mantiene le proporzioni delle immagini */
-    border: 1px solid #000;
-    /* Bordo delle immagini */
-    border-radius: 100px;
-    /* Angoli arrotondati delle immagini */
-}
-
-/* Stili di base per il footer */
-footer {
-    width: 1000px;
-    background-color: #333;
-    /* Colore di sfondo scuro */
-    color: #fff;
-    /* Colore del testo chiaro */
-    text-align: center;
-    /* Testo centrato */
-    padding: 20px;
-    /* Spaziatura interna */
-    position: relative;
-    /* Posizione relativa per il posizionamento del footer */
-    bottom: 0;
-    /* Allinea il footer al fondo della pagina */
-    width: 100%;
-    /* Larghezza del footer */
+/* Reset Browser Default Styles using universal * selector */
+* {
     box-sizing: border-box;
-    /* Include padding e bordo nella larghezza totale */
+    margin: 0;
+    padding: 0;
 }
 
-/* Link all'interno del footer */
-footer a {
-    color: #fff;
-    /* Colore dei link chiaro */
-    text-decoration: none;
-    /* Rimuove la sottolineatura dei link */
+/* Whole page styles (everything is in <body> */
+body {
+    padding: 10px;
+    font-family: "Merriweather", Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-footer a:hover {
-    text-decoration: underline;
-    /* Aggiunge sottolineatura ai link al passaggio del mouse */
+/* Styles for the <header> section */
+header {
+    background-color: #abaea7;
+    text-align: center;
+    height: 60px;
+    padding: 10px;
+}
+
+/* Styles for the <nav> section */
+nav {
+    margin-bottom: 10px;
+    background-color: #e2e2e2;
+    text-align: flex;
+    height: 140;
+}
+
+main {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    background-color: #373836;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+}
+
+.left-column,
+.right-column {
+    display: inline-block;
+    vertical-align: top;
+    /* Allinea le colonne in alto */
+    border: 60px solid #72756f;
+}
+
+.left-column {
+    width: 70%;
+    /* Colonna di sinistra più larga */
+    padding: 10px;
+    background: #e2e2e2;
+    height: 600px;
+    border: 20px solid #72756f;
+    margin-bottom: 30px;
+}
+
+.left-column h1 {
+    text-align: center;
+    /* Allinea il testo al centro */
+    margin-bottom: 15px;
+    /* Spazio sotto l'h1, opzionale */
+}
+
+.right-column {
+    width: 29%;
+    /* Colonna di destra più stretta */
+    padding: 10px;
+    background: #e2e2e2;
+    height: 600px;
+    border: 20px solid #72756f;
+    text-align: center;
+}
+
+.right-column h2 {
+    border: 10px solid #72756f;
+    margin-bottom: 15px;
+}
+
+ul {
+    display: inline-block;
+    /* Rende l'elenco un elemento a larghezza contenuta */
+    text-align: left;
+    /* Allinea il testo dell'elenco a sinistra, all'interno del blocco */
+    list-style-position: inside;
+    /* I marker degli elenchi si allineano con il testo */
+    padding-left: 0;
+    /* Rimuove il padding sinistro predefinito dell'elenco */
+}
+
+ul li {
+    /* Stili opzionali per l'elemento della lista */
+    margin-bottom: 10px;
+    /* Spazio tra gli elementi dell'elenco */
+}
+
+.sub-column {
+    display: inline-block;
+    width: 31%;
+    /* Larghezza di ciascuna parte, con margini inclusi */
+    padding: 67px;
+    background: #ddd;
+    margin-right: 2%;
+    /* Spazio tra le colonne */
+    text-align: center;
+    border: 20px solid #72756f;
+    margin-top: 0px;
+}
+
+.sub-columns {
+    display: block;
+    margin-top: 0px;
+    /* Spazio tra la colonna principale e la sottocolonna */
+}
+
+.sub-column:nth-child(3) {
+    margin-right: 0;
+    /* Nessun margine a destra per l'ultima colonna */
+}
+
+
+
+/* Styles for the <footer> section */
+footer {
+    margin-top: 10px;
+    height: 100px;
+    background-color: #abaea7;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: cursive;
+    vertical-align: baseline;
+    height: 60px;
+    padding: 40px;
 }
