@@ -49,11 +49,10 @@ main {
 .left-column {
     width: 70%;
     /* Colonna di sinistra più larga */
-    padding: 10px;
+    padding: 0%;
     background: #e2e2e2;
-    height: 600px;
+    height: 300px;
     border: 20px solid #72756f;
-    margin-bottom: 30px;
 }
 
 .left-column h1 {
@@ -70,12 +69,13 @@ main {
     background: #e2e2e2;
     height: 600px;
     border: 20px solid #72756f;
-    text-align: center;
+    text-align: justify;
 }
 
 .right-column h2 {
     border: 10px solid #72756f;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 ul {
@@ -110,7 +110,7 @@ ul li {
 
 .sub-columns {
     display: block;
-    margin-top: 0px;
+    margin-top: 65px;
     /* Spazio tra la colonna principale e la sottocolonna */
 }
 
