@@ -99,18 +99,21 @@ ul li {
     display: inline-block;
     width: 31%;
     /* Larghezza di ciascuna parte, con margini inclusi */
-    padding: 67px;
+    padding: 100px;
     background: #ddd;
     margin-right: 2%;
     /* Spazio tra le colonne */
     text-align: center;
     border: 20px solid #72756f;
     margin-top: 0px;
+    height: 200px;
+    margin-bottom: 0px;
 }
 
 .sub-columns {
     display: block;
-    margin-top: 65px;
+    margin-top: 125px;
+    height: 100px;
     /* Spazio tra la colonna principale e la sottocolonna */
 }
 
